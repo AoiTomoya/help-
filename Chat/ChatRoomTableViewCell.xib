@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="KGk-i7-Jjw" customClass="ChatRoomTableViewCell" customModule="help_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placehoder_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="mi9-F6-jIi">
+                        <rect key="frame" x="8" y="10" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="E9h-e9-03F"/>
+                            <constraint firstAttribute="width" constant="25" id="gUx-eO-AaT"/>
+                        </constraints>
+                    </imageView>
+                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Message" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QTa-Np-buZ">
+                        <rect key="frame" x="41" y="10" width="250" height="80"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="rXz-ia-Ccd"/>
+                        </constraints>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wH-cT-Fmv">
+                        <rect key="frame" x="296" y="72" width="34" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Message" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gXO-6f-6H1">
+                        <rect key="frame" x="154" y="10" width="250" height="80"/>
+                        <color key="backgroundColor" red="0.11764705882352941" green="0.56470588235294117" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="PLI-dl-XYf"/>
+                        </constraints>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaU-ll-2u3">
+                        <rect key="frame" x="115" y="72" width="34" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gXO-6f-6H1" secondAttribute="trailing" constant="10" id="5Yb-k4-jwx"/>
+                    <constraint firstItem="QTa-Np-buZ" firstAttribute="leading" secondItem="mi9-F6-jIi" secondAttribute="trailing" constant="8" id="5eo-VZ-EgR"/>
+                    <constraint firstItem="QTa-Np-buZ" firstAttribute="bottomMargin" secondItem="4wH-cT-Fmv" secondAttribute="bottom" constant="-5" id="MuP-PP-IJS"/>
+                    <constraint firstItem="QTa-Np-buZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="NUY-4e-P7K"/>
+                    <constraint firstItem="gXO-6f-6H1" firstAttribute="leading" secondItem="oaU-ll-2u3" secondAttribute="trailing" constant="5" id="Qlx-Hw-vpU"/>
+                    <constraint firstItem="4wH-cT-Fmv" firstAttribute="leading" secondItem="QTa-Np-buZ" secondAttribute="trailing" constant="5" id="VuT-g3-u5N"/>
+                    <constraint firstItem="gXO-6f-6H1" firstAttribute="bottomMargin" secondItem="oaU-ll-2u3" secondAttribute="bottom" constant="-5" id="WR0-Jr-53H"/>
+                    <constraint firstItem="gXO-6f-6H1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="XJO-ki-pw2"/>
+                    <constraint firstItem="mi9-F6-jIi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="iG7-p1-g5w"/>
+                    <constraint firstAttribute="bottom" secondItem="gXO-6f-6H1" secondAttribute="bottom" constant="10" id="mBL-A4-KxL"/>
+                    <constraint firstItem="mi9-F6-jIi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="oQ8-xG-9Al"/>
+                    <constraint firstAttribute="bottom" secondItem="QTa-Np-buZ" secondAttribute="bottom" constant="10" id="p6S-77-A2V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="myMessageTextView" destination="gXO-6f-6H1" id="50j-Xt-29V"/>
+                <outlet property="myMessageTextViewWidthConstraint" destination="PLI-dl-XYf" id="9r2-WE-2CA"/>
+                <outlet property="myTimeLabel" destination="oaU-ll-2u3" id="BnN-zV-zpq"/>
+                <outlet property="partnerMessageTextView" destination="QTa-Np-buZ" id="Zrw-2s-8Qb"/>
+                <outlet property="partnerMessageTextViewWidthConstraint" destination="rXz-ia-Ccd" id="IMQ-09-0oR"/>
+                <outlet property="partnerTimeLabel" destination="4wH-cT-Fmv" id="hWf-k1-MTS"/>
+                <outlet property="userImageView" destination="mi9-F6-jIi" id="0Yx-4e-Nus"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="11.383928571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placehoder_icon.png" width="172.5" height="172.5"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

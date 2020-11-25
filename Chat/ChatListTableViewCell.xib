@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="KGk-i7-Jjw" customClass="ChatListTableViewCell" customModule="help_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placehoder_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fzl-g8-Pvr">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="LJn-mw-C1Z"/>
+                            <constraint firstAttribute="height" constant="50" id="c3x-3A-0Tu"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Message" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GH-eV-ikj">
+                        <rect key="frame" x="64" y="40" width="330" height="50"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="JNq-K2-6Hp"/>
+                            <constraint firstAttribute="width" constant="330" id="leq-gs-BBu"/>
+                        </constraints>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/12/31 23:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOb-kU-73W">
+                        <rect key="frame" x="284" y="8" width="110" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="vfp-dk-jFd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jNG-QU-lxc">
+                        <rect key="frame" x="66" y="8" width="140" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbe-ks-dwL">
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="atw-TE-bt1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@User ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oc3-gq-Hqh">
+                                <rect key="frame" x="0.0" y="16" width="140" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Xru-04-D9X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="0GH-eV-ikj" secondAttribute="bottom" constant="10" id="7cn-nA-bp7"/>
+                    <constraint firstItem="0GH-eV-ikj" firstAttribute="leading" secondItem="Fzl-g8-Pvr" secondAttribute="trailing" constant="6" id="DYB-4d-PZq"/>
+                    <constraint firstItem="AOb-kU-73W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="I5O-6s-7l1"/>
+                    <constraint firstItem="jNG-QU-lxc" firstAttribute="leading" secondItem="Fzl-g8-Pvr" secondAttribute="trailing" constant="8" id="OGl-3a-1ww"/>
+                    <constraint firstItem="jNG-QU-lxc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="jq5-gJ-R7R"/>
+                    <constraint firstAttribute="trailing" secondItem="0GH-eV-ikj" secondAttribute="trailing" constant="20" id="kJI-qn-Xsa"/>
+                    <constraint firstItem="Fzl-g8-Pvr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="rsS-tb-zM5"/>
+                    <constraint firstItem="Fzl-g8-Pvr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="xPq-Nz-qjV"/>
+                    <constraint firstAttribute="trailing" secondItem="AOb-kU-73W" secondAttribute="trailing" constant="20" id="xxf-5E-kUG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="messageTextView" destination="0GH-eV-ikj" id="1uP-wG-GGL"/>
+                <outlet property="timeLabel" destination="AOb-kU-73W" id="2Ox-Vr-LIx"/>
+                <outlet property="userIDLabel" destination="oc3-gq-Hqh" id="kYX-yd-4na"/>
+                <outlet property="userImageView" destination="Fzl-g8-Pvr" id="xVA-CB-UVL"/>
+                <outlet property="userNameLabel" destination="Lbe-ks-dwL" id="F6m-mV-haI"/>
+            </connections>
+            <point key="canvasLocation" x="-110.14492753623189" y="34.821428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placehoder_icon.png" width="172.5" height="172.5"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
